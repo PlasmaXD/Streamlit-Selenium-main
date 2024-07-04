@@ -1,9 +1,6 @@
 pandas
 streamlit
 selenium
-requests
-lxml
-countryflag
 webdriver_manager
 pandas
 scikit-surprise==1.1.4
