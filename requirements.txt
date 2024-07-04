@@ -3,4 +3,4 @@ streamlit
 selenium
 webdriver_manager
 pandas
-scikit-surprise==1.1.4
+scikit-surprise
