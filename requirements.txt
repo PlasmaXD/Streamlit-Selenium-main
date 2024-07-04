@@ -4,3 +4,4 @@ selenium
 webdriver_manager
 pandas
 scikit-surprise
+numpy<2.0.0
