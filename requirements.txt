@@ -1,6 +1,6 @@
 pandas
 streamlit
-selenium
+selenium==4.5
 webdriver_manager
 pandas
 scikit-surprise

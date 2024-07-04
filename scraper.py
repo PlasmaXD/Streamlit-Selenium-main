@@ -5,6 +5,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import time
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 def get_program_details(search_query):
     # chromedriver_path = chromedriver_autoinstaller.install()
@@ -17,7 +20,9 @@ def get_program_details(search_query):
 
     # service = Service(chromedriver_path)
     # driver = webdriver.Chrome(service=service, options=options)
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+
+    # driver = webdriver.Chrome(options=options)
     search_url = f"https://bangumi.org/search?q={search_query}&area_code=23"
     driver.get(search_url)
     
